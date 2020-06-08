@@ -4,9 +4,13 @@ public class CompressionString {
 	
 	public static void main(String[] args) {
 		
-		String str = "aaaaaaggggjfirrr";
+		//String str = "AAABBBddddcccssss";
+		String str = "abcabcd";
+		if(null != str) {
+			
+		str = str.trim();
 		int n = str.length();
-		for(int i=0;i<str.length();i++) {
+		for(int i=0;i<n;i++) {
 			int count = 1;
 			while(i<n-1 &&
 			str.charAt(i)==str.charAt(i+1)) {
@@ -19,6 +23,7 @@ public class CompressionString {
 			
 		}
 		
+	}
 	}
 
 }
